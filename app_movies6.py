@@ -26,7 +26,7 @@ st.markdown(
 )
 
 # ----------------- DATA LOADING -----------------
-DATA_PATH = r"C:\Users\kumar\Desktop\Movie-Rating.csv"
+DATA_PATH = "Movie-Rating.csv"
 
 @st.cache_data
 def load_movies(path: str) -> pd.DataFrame:
@@ -269,3 +269,4 @@ with tab_advanced:
     plt.tight_layout()
     st.pyplot(fig)
     plt.close(fig)
+
